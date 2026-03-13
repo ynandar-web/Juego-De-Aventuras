@@ -1,0 +1,134 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" version="29.6.1">
+  <diagram name="Página-1" id="TPAIOvwq3ilxfVMw1dT-">
+    <mxGraphModel dx="3182" dy="1021" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FfksDM1nvxAhyGfomKmG-1" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt;&lt;div&gt;Personaje&lt;/div&gt;" vertex="1">
+          <mxGeometry height="430" width="210" x="190" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FfksDM1nvxAhyGfomKmG-2" parent="FfksDM1nvxAhyGfomKmG-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;p data-path-to-node=&quot;4,1,0,0&quot;&gt;- nombre: String&lt;/p&gt;&lt;p data-path-to-node=&quot;4,1,0,2&quot;&gt;- vida: int [0-100]&lt;/p&gt;&lt;p data-path-to-node=&quot;4,1,0,4&quot;&gt;- energia: int [0-100]&lt;/p&gt;&lt;p data-path-to-node=&quot;4,1,0,6&quot;&gt;- danioBase: int&lt;/p&gt;&lt;p data-path-to-node=&quot;4,1,0,8&quot;&gt;- inventario: List&amp;lt;Objeto&amp;gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="140" width="210" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FfksDM1nvxAhyGfomKmG-3" parent="FfksDM1nvxAhyGfomKmG-1" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="14" width="210" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="FfksDM1nvxAhyGfomKmG-4" parent="FfksDM1nvxAhyGfomKmG-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;p data-path-to-node=&quot;4,2,0,0&quot;&gt;+ Personaje(nombre: String, vida: int, energia: int, danioBase: int)&lt;/p&gt;&lt;p data-path-to-node=&quot;4,2,0,2&quot;&gt;+ usarObjeto(objeto: Objeto): void&lt;/p&gt;&lt;p data-path-to-node=&quot;4,2,0,4&quot;&gt;+ agregarObjeto(objeto: Objeto): void&lt;/p&gt;&lt;p data-path-to-node=&quot;4,2,0,6&quot;&gt;+ restaurarVida(n: int): void&lt;/p&gt;&lt;p data-path-to-node=&quot;4,2,0,8&quot;&gt;+ aumentarDanio(n: int): void&lt;/p&gt;&lt;p data-path-to-node=&quot;4,2,0,10&quot;&gt;+ recibirDanio(n: int): void&lt;/p&gt;&lt;p data-path-to-node=&quot;4,2,0,12&quot;&gt;+ &lt;i data-path-to-node=&quot;4,2,0,12&quot; data-index-in-node=&quot;2&quot;&gt;habilidadEspecial()&lt;/i&gt;: void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="236" width="210" y="194" as="geometry" />
+        </mxCell>
+        <mxCell id="FfksDM1nvxAhyGfomKmG-6" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/div&gt;Objeto" vertex="1">
+          <mxGeometry height="134" width="210" x="190" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="FfksDM1nvxAhyGfomKmG-7" parent="FfksDM1nvxAhyGfomKmG-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;p data-path-to-node=&quot;5,2,0,0&quot;&gt;+ getNombre(): String&lt;/p&gt;&lt;p data-path-to-node=&quot;5,2,0,2&quot;&gt;+ usar(personaje: Personaje): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="80" width="210" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FfksDM1nvxAhyGfomKmG-8" parent="FfksDM1nvxAhyGfomKmG-6" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="14" width="210" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="FfksDM1nvxAhyGfomKmG-15" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Guerrero" vertex="1">
+          <mxGeometry height="160" width="210" x="-150" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="FfksDM1nvxAhyGfomKmG-16" parent="FfksDM1nvxAhyGfomKmG-15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;p data-path-to-node=&quot;4,1,0,0&quot;&gt;- ATAQUE_FISICO: int = 20&lt;/p&gt;" vertex="1">
+          <mxGeometry height="40" width="210" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FfksDM1nvxAhyGfomKmG-17" parent="FfksDM1nvxAhyGfomKmG-15" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="14" width="210" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FfksDM1nvxAhyGfomKmG-18" parent="FfksDM1nvxAhyGfomKmG-15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;p data-path-to-node=&quot;6,2,0,0&quot;&gt;+ Guerrero(nombre: String)&lt;/p&gt;&lt;p data-path-to-node=&quot;6,2,0,2&quot;&gt;+ habilidadEspecial(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="66" width="210" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="FfksDM1nvxAhyGfomKmG-19" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Mago" vertex="1">
+          <mxGeometry height="160" width="210" x="550" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="FfksDM1nvxAhyGfomKmG-20" parent="FfksDM1nvxAhyGfomKmG-19" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;p data-path-to-node=&quot;4,1,0,0&quot;&gt;- PODER_HECHIZO: int = 30&lt;/p&gt;" vertex="1">
+          <mxGeometry height="40" width="210" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FfksDM1nvxAhyGfomKmG-21" parent="FfksDM1nvxAhyGfomKmG-19" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="14" width="210" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FfksDM1nvxAhyGfomKmG-22" parent="FfksDM1nvxAhyGfomKmG-19" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;p data-path-to-node=&quot;7,2,0,0&quot;&gt;+ Mago(nombre: String)&lt;/p&gt;&lt;p data-path-to-node=&quot;7,2,0,2&quot;&gt;+ habilidadEspecial(): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="66" width="210" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="FfksDM1nvxAhyGfomKmG-23" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Arma" vertex="1">
+          <mxGeometry height="220" width="210" x="190" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="FfksDM1nvxAhyGfomKmG-24" parent="FfksDM1nvxAhyGfomKmG-23" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;p data-path-to-node=&quot;8,1,0,0&quot;&gt;- BONUS_DANIO: int = 10&lt;/p&gt;&lt;p data-path-to-node=&quot;8,1,0,2&quot;&gt;- nombre: String&lt;/p&gt;" vertex="1">
+          <mxGeometry height="70" width="210" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FfksDM1nvxAhyGfomKmG-25" parent="FfksDM1nvxAhyGfomKmG-23" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="14" width="210" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="FfksDM1nvxAhyGfomKmG-26" parent="FfksDM1nvxAhyGfomKmG-23" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;p data-path-to-node=&quot;8,2,0,0&quot;&gt;+ Arma(nombre: String)&lt;/p&gt;&lt;p data-path-to-node=&quot;8,2,0,2&quot;&gt;+ getNombre(): String&lt;/p&gt;&lt;p data-path-to-node=&quot;8,2,0,4&quot;&gt;+ usar(personaje: Personaje): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="96" width="210" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="FfksDM1nvxAhyGfomKmG-27" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Pocion" vertex="1">
+          <mxGeometry height="220" width="210" x="-150" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="FfksDM1nvxAhyGfomKmG-28" parent="FfksDM1nvxAhyGfomKmG-27" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;p data-path-to-node=&quot;9,1,0,0&quot;&gt;- VIDA_RESTAURADA: int = 25&lt;/p&gt;&lt;p data-path-to-node=&quot;9,1,0,2&quot;&gt;- nombre: String&lt;/p&gt;" vertex="1">
+          <mxGeometry height="70" width="210" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FfksDM1nvxAhyGfomKmG-29" parent="FfksDM1nvxAhyGfomKmG-27" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="14" width="210" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="FfksDM1nvxAhyGfomKmG-30" parent="FfksDM1nvxAhyGfomKmG-27" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;p data-path-to-node=&quot;9,2,0,0&quot;&gt;+ Pocion(nombre: String)&lt;/p&gt;&lt;p data-path-to-node=&quot;9,2,0,2&quot;&gt;+ getNombre(): String&lt;/p&gt;&lt;p data-path-to-node=&quot;9,2,0,4&quot;&gt;+ usar(personaje: Personaje): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="96" width="210" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="FfksDM1nvxAhyGfomKmG-31" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Llave" vertex="1">
+          <mxGeometry height="240" width="210" x="510" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="FfksDM1nvxAhyGfomKmG-32" parent="FfksDM1nvxAhyGfomKmG-31" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;p data-path-to-node=&quot;10,1,0,0&quot;&gt;- nombre: String&lt;/p&gt;&lt;p data-path-to-node=&quot;10,1,0,2&quot;&gt;- zonaAcceso: String&lt;/p&gt;" vertex="1">
+          <mxGeometry height="70" width="210" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FfksDM1nvxAhyGfomKmG-33" parent="FfksDM1nvxAhyGfomKmG-31" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="14" width="210" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="FfksDM1nvxAhyGfomKmG-34" parent="FfksDM1nvxAhyGfomKmG-31" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;p data-path-to-node=&quot;10,2,0,0&quot;&gt;+ Llave(nombre: String, zonaAcceso: String)&lt;/p&gt;&lt;p data-path-to-node=&quot;10,2,0,2&quot;&gt;+ getNombre(): String&lt;/p&gt;&lt;p data-path-to-node=&quot;10,2,0,4&quot;&gt;+ usar(personaje: Personaje): void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="116" width="210" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="FfksDM1nvxAhyGfomKmG-46" edge="1" parent="1" source="FfksDM1nvxAhyGfomKmG-22" style="endArrow=block;endFill=0;html=1;rounded=0;exitX=-0.003;exitY=0.015;exitDx=0;exitDy=0;entryX=1;entryY=0.765;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" target="FfksDM1nvxAhyGfomKmG-2" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points" />
+            <mxPoint x="80" y="486" as="sourcePoint" />
+            <mxPoint x="170" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FfksDM1nvxAhyGfomKmG-48" edge="1" parent="1" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=0;entryY=0.714;entryDx=0;entryDy=0;entryPerimeter=0;" target="FfksDM1nvxAhyGfomKmG-8" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="-30" y="810" as="sourcePoint" />
+            <mxPoint x="37" y="657" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FfksDM1nvxAhyGfomKmG-49" edge="1" parent="1" source="FfksDM1nvxAhyGfomKmG-23" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.534;exitY=0.006;exitDx=0;exitDy=0;exitPerimeter=0;" target="FfksDM1nvxAhyGfomKmG-6" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="280" y="820" as="sourcePoint" />
+            <mxPoint x="347" y="667" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FfksDM1nvxAhyGfomKmG-50" edge="1" parent="1" source="FfksDM1nvxAhyGfomKmG-31" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="FfksDM1nvxAhyGfomKmG-6" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="385" y="810" as="sourcePoint" />
+            <mxPoint x="380" y="694" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FfksDM1nvxAhyGfomKmG-51" edge="1" parent="1" style="endArrow=block;endFill=0;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.714;entryDx=0;entryDy=0;entryPerimeter=0;" target="FfksDM1nvxAhyGfomKmG-2" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="60" y="279" as="sourcePoint" />
+            <mxPoint x="173" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FfksDM1nvxAhyGfomKmG-52" edge="1" parent="1" source="FfksDM1nvxAhyGfomKmG-6" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.654;entryY=1.005;entryDx=0;entryDy=0;entryPerimeter=0;" target="FfksDM1nvxAhyGfomKmG-4" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="130" y="460" as="sourcePoint" />
+            <mxPoint x="290" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FfksDM1nvxAhyGfomKmG-54" edge="1" parent="1" source="FfksDM1nvxAhyGfomKmG-6" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0.318;entryY=1.005;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;" target="FfksDM1nvxAhyGfomKmG-4" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="200" y="260" as="sourcePoint" />
+            <mxPoint x="360" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
