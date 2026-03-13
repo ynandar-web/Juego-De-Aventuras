@@ -1,6 +1,10 @@
+/**
+ * Representa un objeto clave (Key Item) que permite acceder a nuevas zonas.
+ * No afecta las estadísticas del personaje.
+ */
 public class Llave implements Objeto {
     private String nombre;
-    private String zonaAcceso;
+    private String zonaAcceso; // La ubicación que esta llave desbloquea
 
     public Llave(String nombre, String zonaAcceso) {
         this.nombre = nombre;
