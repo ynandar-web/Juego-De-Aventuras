@@ -3,7 +3,8 @@ yobany andres nandar campo;
 
 seebastian muñoz de la ese;
 
-juan diego hurtado;
+juan diego hurtadoo;
 
-david orozco 
+david orozco;
+
 ejercicio 
